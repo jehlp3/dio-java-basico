@@ -2,6 +2,7 @@ package smartTv;
 
 public class SmartTv {
 	
+	//Atributos a nível de classe
 	boolean estaLigada = false;
 	int canal = 1;
 	int volume = 5;
