@@ -12,11 +12,10 @@ public class RepeticaoDoWhile {
 		} while (tocando());
 		System.out.println("Alô !!!");
 	}
-	private static boolean tocando() {
-		boolean atendeu = new Random().nextInt(3)==1;
-		System.out.println("Atendeu? "+atendeu);
-		return ! atendeu;
-	}
-	}
-	
 
+	private static boolean tocando() {
+		boolean atendeu = new Random().nextInt(3) == 1;
+		System.out.println("Atendeu? " + atendeu);
+		return !atendeu;
+	}
+}
