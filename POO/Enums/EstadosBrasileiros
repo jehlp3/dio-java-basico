@@ -1,0 +1,36 @@
+package enums;
+
+public enum EstadosBrasileiros {
+
+
+	SAO_PAULO ("SP","São Paulo","11"),
+	RIO_JANEIRO ("RJ", "Rio de Janeiro","12"),
+	PIAUI ("PI", "Piauí","13"),
+	MARANHAO ("MA","Maranhão","14") 
+	//adicione aqui juntamente com as variáveis se forem adicionadas
+	;
+	
+	private String nome;
+	private String sigla;
+	private String ibge;
+	//adicione atributos aqui
+	
+	private EstadosBrasileiros(String sigla, String nome, String ibge) {
+		this.sigla = sigla;
+		this.nome = nome;
+		this.ibge = ibge;  //add aqui
+	}
+	public String getIbge() { //e aqui
+		return ibge;
+	}
+	public String getSigla() {
+		return sigla;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public String getNomeMaiusculo() {
+		return nome.toUpperCase();
+	}
+	
+}
